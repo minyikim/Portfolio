@@ -18,26 +18,22 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/responsive.css">
   <link rel="stylesheet" href="./css/featherlight.css">
-
   <!-- ===== SLICK CSS ===== -->
   <link rel="stylesheet" href="./css/slick.css">
   <link rel="stylesheet" href="./css/slick-theme.css">
-
   <!-- ===== AOS CSS ===== -->
   <link rel="stylesheet" href="./css/aos.css">
 
   <!-- ===== SCRIPT ===== -->
   <script src="./script/jquery-3.5.1.min.js"></script>
-  <script src="./script/scroll.js"></script>
-  <script src="./script/script.js"></script>
-  <script src="./script/featherlight.js"></script>
-
-  <!-- ===== SLICK JS ===== -->
-  <script src="./script/jquery-1.11.0.min.js"></script>
   <script src="./script/jquery-migrate-1.2.1.min.js"></script>
+  <script src="./script/main.js"></script>
+  <script src="./script/scroll.js"></script>
+  <!-- ===== SLICK JS ===== -->
   <script src="./script/slick.js"></script>
   <script src="./script/slick.min.js"></script>
-
+  <!-- ===== MODAL JS ===== -->
+  <script src="./script/featherlight.js"></script>
   <!-- ===== AOS JS ===== -->
   <script src="./script/aos.js"></script>
 </head>
@@ -78,14 +74,16 @@
 
       <!-- about -->
       <section id="about" data-num="1">
-        <h1 class="title">ABOUT ME</h1>
-        <div class="about_img" data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-duration="2000"></div>
-        <div class="about_ment" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2500">
-          <h2>신입 웹 퍼블리셔 김민이 입니다.</h2>
-          <p><b>저에게의 업이란?</b> 단순히 생계를 유지하기 위한 일이 아닌 <br> 저 자신을 <span>발전</span>시키고 <span>가치</span>있는 삶을 살아가기 위한
-            <span>목표</span>라고 생각합니다.</p>
-          <p>이를 위해 언제나 <b>능동적인 자세로 끊임없이 변화되는 웹 기술에 대응</b>하는<br> 웹 퍼블리셔 <b>김민이</b>가 되겠습니다.</p>
-          <a href="./portfolio/resume.pdf" download="김민이_resume" class="resume">DOWNLOAD RESUME</a>
+        <div class="container">
+          <h1 class="title">ABOUT ME</h1>
+          <div class="about_img" data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-duration="2000"></div>
+          <div class="about_ment" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2500">
+            <h2>신입 웹 퍼블리셔 김민이 입니다.</h2>
+            <p><b>저에게의 업이란?</b> 단순히 생계를 유지하기 위한 일이 아닌 <br> 저 자신을 <span>발전</span>시키고 <span>가치</span>있는 삶을 살아가기 위한
+              <span>목표</span>라고 생각합니다.</p>
+            <p>이를 위해 언제나 <b>능동적인 자세로 끊임없이 변화되는 웹 기술에 대응</b>하는<br> 웹 퍼블리셔 <b>김민이</b>가 되겠습니다.</p>
+            <a href="./portfolio/resume.pdf" target="_blank" class="resume">VIEW RESUME</a>
+          </div>
         </div>
       </section>
 
@@ -200,7 +198,9 @@
                   </li>
                 </ul>
                 <div class="port_view">
-                  <div class="guide"><a href="./portfolio/website/guide1.jpg" data-featherlight="iframe">VIEW GUIDE</a>
+                  <!--  -->
+                  <div class="guide"><a href="./portfolio/website/guide1.jpg" data-featherlight="iframe"
+                      class="modal_btn">VIEW GUIDE</a>
                   </div>
                   <div class="site"><a href="./portfolio/website/01_CANON/index.html" target="_blank">VIEW SITE</a>
                   </div>
@@ -234,7 +234,7 @@
                 <div class="port_view">
                   <div class="guide"><a href="./portfolio/website/guide2.jpg" data-featherlight="iframe">VIEW GUIDE</a>
                   </div>
-                  <div class="site"><a href="./portfolio/website/02_KEA/index.html">VIEW SITE</a></div>
+                  <div class="site"><a href="./portfolio/website/02_KEA/index.html" target="_blank">VIEW SITE</a></div>
                 </div>
               </div>
               <div class="port_right2"></div>
@@ -467,18 +467,26 @@
       <!-- contact -->
       <section id="contact" data-num="5">
         <div class="container">
-          <!-- <h1 class="title"></h1> -->
           <div class="contact_inner">
+
+            <div class="contact_sns">
+              <a href="https://github.com/minyikim" target="_blank" data-aos="zoom-in"><img src="./images/github.png"
+                  alt=""></a>
+              <a href="https://www.instagram.com/_my9912/" target="_blank" data-aos="zoom-in"><img
+                  src="./images/instagram.png" alt=""></a>
+            </div>
+
             <div class="contact_kakao" data-aos="zoom-out">
-              <a href="https://namecard.kakao.com/alsdl7748" target="_blank"><img src="./images/kakao.jpg"
-                  alt="contact_kakao"></a>
+              <img src="./images/kakao.png" alt="contact_kakao">
             </div>
 
             <button class="contact_email" onclick="copy('#emailadress')">
               <span class="email_popup">복사 되었습니다!</span>
               <b id="emailadress" data-aos="zoom-out">alsdl7748@naver.com</b>
             </button>
-            <p>자세한 문의는 연락주시면 빠른 시일 내로 답장해 드립니다.<br>메일을 누르시면 복사 가능합니다.</p>
+            <span></span>
+
+            <p>※ 메일을 누르시면 복사 가능합니다<br><br><b>궁금한 사항이 있으시다면 연락 주시기 바랍니다. <br> 빠른 시일 내로 답장해 드립니다.</b></p>
 
             <div class="contact_copy">
               <h4>COPYRIGHT ⓒ 2023 WEBPUBLISHER MIN YI KIM. ALL RIGHTS RESERVED.</h4>

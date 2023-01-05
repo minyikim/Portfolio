@@ -17,13 +17,85 @@
     width: 100%;
   }
 
-  .design-tabs h3.tab1{
+  /* about */
+  #about{
+    width: 100%;
+  }
+  #about .container{
+    width: 100%;
+    height: 100%;
+  }
+  .about_ment{
+    left: -3%;
+  }
+
+  /* skill */
+  #skill{
+    width: 100%;
+    height: 100%;
+  }
+  #skill .container{
+    height: 100%;
+  }
+  .skill_inner{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    grid-template-columns: repeat(3, minmax(300px, auto));
+  }
+  .tooltip p{
+    width: 330px;
+    height: 150px;
+    font-size: 14px;
+  }
+  .tooltip p::after{
+    top: -35px;
+  }
+
+  /* Portfolio */
+  #portfolio{
+    width: 100%;
+  }
+  #portfolio .container2{
+    width: 100%;
+  }
+  .slide{
+    width: 100%;
+  }
+  .port_left{
+    padding: 0 40px 0 15em;
+  }
+
+  /* design */
+  #design{
+    width: 100%;
+  }
+  #design .container2{
+    width: 100%;
+    height: 100%;
+  }
+  .design-tabs{
+    width: 100%;
+    height: 100%;
+  }
+  .design-tabs ul{
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4, 340px);
+
+    place-items: center;
+    gap: 30px;
+  }
+  .design-tabs h3.tab1 {
     left: 20%;
   }
-  .design-tabs h3.tab2{
+
+  .design-tabs h3.tab2 {
     left: 50%;
   }
-  .design-tabs h3.tab3{
+
+  .design-tabs h3.tab3 {
     left: 80%;
   }
 }
@@ -61,6 +133,16 @@
     width: 100%;
   }
 
+  #contact {
+    width: 100%;
+    height: 700px;
+    background-size: 100%;
+    position: relative;
+  }
+
+  .contact_email b {
+    font-size: 60px;
+  }
 }
 
 /* ===== TABLET COLUMN + MOBILE ROW ===== */
@@ -266,6 +348,7 @@
   /* design */
   #design {
     width: 100%;
+    height: 1200px;
     position: relative;
   }
 
@@ -288,7 +371,6 @@
 
     font-size: 17px;
     line-height: 33px;
-
   }
 
   .design-tabs h3.tab2 {
@@ -306,8 +388,8 @@
     height: 100%;
 
     grid-template-columns: repeat(2, 40%);
-    grid-template-rows: repeat(4, 17%);
-    gap: 30px;
+    grid-template-rows: repeat(4, 25%);
+    gap: 20px;
   }
 
   .design-tabs ul li img {
@@ -331,10 +413,10 @@
   #contact {
     width: 100%;
     height: 500px;
+    margin-top: 35em;
     background-size: 100%;
     position: relative;
   }
-
   #contact .container {
     width: 100%;
   }
@@ -405,8 +487,10 @@
   .resume {
     width: 50%;
     height: 15%;
-    margin-top: -30px;
-    line-height: 35px;
+    line-height: 40px;
+
+    position: absolute;
+    top: 100%;
   }
 
   /* skill */
@@ -522,6 +606,7 @@
   /* design */
   #design {
     width: 100%;
+    height: 1000px;
   }
 
   #design .title {
@@ -534,7 +619,14 @@
   .design-tabs {
     margin-top: 25em;
   }
+  .design-tabs ul {
+    width: 100%;
+    height: 100%;
 
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(4, 15%);
+    gap: 20px;
+  }
   .design-tabs ul li {
     height: 150px;
   }
@@ -555,7 +647,8 @@
   /* contact */
   #contact {
     width: 100%;
-    height: 250px;
+    height: 350px;
+    margin-top: -10em;
   }
 
   #contact .container {
@@ -563,7 +656,7 @@
   }
 
   .contact_kakao img {
-    display: none;
+    margin-bottom: 2em;
   }
 
   .contact_email b {
@@ -572,6 +665,10 @@
 
   .contact_inner p {
     font-size: 5px;
+  }
+
+  .contact_inner p b {
+    font-size: 12px;
   }
 
   .contact_copy h4 {
@@ -587,6 +684,11 @@
     margin-top: -1em;
   }
 
+  .contact_sns a img {
+    width: 30px;
+  }
+
+  /* modal */
   .featherlight .featherlight-content {
     width: 90%;
     height: 90%;
