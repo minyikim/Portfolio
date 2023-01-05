@@ -1,0 +1,599 @@
+@charset "utf-8";
+
+/* ===== DESKTOP ===== */
+@media (max-width: 1920px) {
+  html {
+    font-size: 87%;
+  }
+}
+
+/* ===== NOTEBOOK ===== */
+@media (max-width: 1799px) {
+  html {
+    font-size: 87%;
+  }
+
+  .wrqp {
+    width: 100%;
+  }
+
+  .design-tabs h3.tab1{
+    left: 20%;
+  }
+  .design-tabs h3.tab2{
+    left: 50%;
+  }
+  .design-tabs h3.tab3{
+    left: 80%;
+  }
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1199px) {
+  html {
+    font-size: 77%;
+  }
+
+  .wrqp {
+    width: 100%;
+    height: 100%;
+  }
+
+  #about {
+    width: 100%;
+  }
+
+  #about .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  #skill {
+    width: 100%;
+  }
+
+  #skill .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  #portfolio {
+    width: 100%;
+  }
+
+}
+
+/* ===== TABLET COLUMN + MOBILE ROW ===== */
+@media (max-width: 899px) {
+  html {
+    font-size: 59%;
+  }
+
+  .wrqp {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  nav {
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    transform: translate(-50%, -40%);
+  }
+
+  .logo img {
+    width: 50%;
+  }
+
+  #about .title,
+  #skill .title,
+  #portfolio .title,
+  #design .title,
+  #contact .title {
+    font-size: 25px;
+  }
+
+  .intro_ment {
+    line-height: 45px;
+  }
+
+  /* about */
+  #about {
+    width: 100%;
+    position: relative;
+  }
+
+  #about div {
+    float: none;
+  }
+
+  #about .about_img {
+    width: 65%;
+    height: 50%;
+    margin-top: -3em;
+
+    background-size: 100%;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  #about .about_ment {
+    width: 100%;
+    padding: 25px;
+    position: absolute;
+    left: 50%;
+    top: 73%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+  }
+
+  #about .about_ment h2 {
+    font-size: 35px;
+  }
+
+  #about .about_ment p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  #about a {
+    width: 50%;
+    font-size: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  /* skill */
+  #skill {
+    width: 100%;
+    height: 100%;
+  }
+
+  .skill_inner {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, auto));
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .skill_inner h3 {
+    font-size: 15px;
+  }
+
+  .tooltip p {
+    width: 100%;
+    font-size: 10px;
+    line-height: 25px;
+  }
+
+  .tooltip p::after {
+    top: -25px;
+  }
+
+  /* portfolio */
+  #portfolio {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  #portfolio .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  #portfolio .title,
+  #design .title {
+    width: 45%;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .slide {
+    width: 100%;
+    height: 100%;
+  }
+
+  .port_inner {
+    width: 50%;
+    height: 50%;
+
+    margin-top: 15em;
+  }
+
+  .port_left {
+    width: 60%;
+    margin-left: -7em;
+    padding-right: 3em;
+  }
+
+  .port_right1,
+  .port_right2,
+  .port_right3 {
+    width: 40%;
+    height: 500px;
+  }
+
+  .port_tit span {
+    font-size: 15px;
+  }
+
+  .port_tit h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .port_tit h1 b {
+    font-size: 18px;
+  }
+
+  .port_tit h2 {
+    font-size: 18px;
+  }
+
+  .port_text h5 {
+    font-size: 15px;
+  }
+
+  .port_text p {
+    font-size: 12px;
+  }
+
+  ul.slick-dots li button {
+    position: absolute;
+    top: -20px;
+    cursor: pointer;
+  }
+
+  .site {
+    margin-left: 5px;
+  }
+
+  .port_view a {
+    width: 100%;
+    height: 90%;
+    font-size: 13px;
+  }
+
+  /* design */
+  #design {
+    width: 100%;
+    position: relative;
+  }
+
+  .design-tabs {
+    width: 100%;
+    height: 100%;
+    margin-top: 20em;
+
+    position: absolute;
+    left: 0;
+  }
+
+  .design-tabs h3 {
+    width: 25%;
+    height: 3%;
+
+    position: absolute;
+    top: 0;
+    left: 5%;
+
+    font-size: 17px;
+    line-height: 33px;
+
+  }
+
+  .design-tabs h3.tab2 {
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .design-tabs h3.tab3 {
+    left: 75%;
+    transform: translate(-20%);
+  }
+
+  .design-tabs ul {
+    width: 100%;
+    height: 100%;
+
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(4, 17%);
+    gap: 30px;
+  }
+
+  .design-tabs ul li img {
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+    height: 100%;
+  }
+
+  .info h4 {
+    font-size: 18px;
+  }
+
+  .info p {
+    font-size: 100%;
+  }
+
+  /* contact */
+  #contact {
+    width: 100%;
+    height: 500px;
+    background-size: 100%;
+    position: relative;
+  }
+
+  #contact .container {
+    width: 100%;
+  }
+
+  .contact_kakao img {
+    width: 15%;
+  }
+
+  .contact_email b {
+    font-size: 40px;
+  }
+
+  .email_popup {
+    line-height: 4rem;
+    font-size: 100%;
+  }
+
+  .contact_copy h4 {
+    font-size: 10px;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 599px) {
+  html {
+    font-size: 40%;
+  }
+
+  .wrqp {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  nav {
+    top: 50%;
+    right: 10px;
+  }
+
+  nav ul li {
+    width: 10px;
+    height: 10px;
+  }
+
+  nav ul li.active {
+    width: 15px;
+    height: 15px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  /* about */
+  #about {
+    width: 100%;
+    height: 110vh;
+  }
+
+  .about_img {
+    position: absolute;
+    top: 10%;
+  }
+
+  .about_ment {
+    width: 100%;
+  }
+
+  .resume {
+    width: 50%;
+    height: 15%;
+    margin-top: -30px;
+    line-height: 35px;
+  }
+
+  /* skill */
+  #skill {
+    width: 100%;
+    height: 100%;
+  }
+
+  .tooltip p {
+    height: 150px;
+    line-height: 20px;
+  }
+
+  .skill_inner {
+    gap: 0px;
+  }
+
+  /* portfolio */
+  #portfolio {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  #portfolio .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  #portfolio .title {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .port_inner {
+    width: 100%;
+    height: 100%;
+    margin-top: 25em;
+  }
+
+  .slide {
+    width: 100%;
+    height: 100%;
+  }
+
+  .port_left {
+    width: 100%;
+  }
+
+  .port_right1,
+  .port_right2,
+  .port_right3 {
+    width: 70%;
+    height: 300px;
+    margin-left: 10em;
+  }
+
+  .port_view {
+    width: 100%;
+  }
+
+  .port_view a {
+    width: 160px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+  }
+
+  .port_tit {
+    line-height: 40px;
+  }
+
+  .port_tit span {
+    font-size: 15px;
+  }
+
+  .port_tit h1 {
+    font-size: 30px;
+  }
+
+  .port_text h5 {
+    font-size: 14px;
+  }
+
+  .port_text p {
+    font-size: 12px;
+  }
+
+  ul.slick-dots li button {
+    width: 80px;
+    height: 15px;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+  }
+
+  .slick-dots li button:before {
+    width: 80px;
+    height: 15px;
+  }
+
+  ul.slick-dots li button:hover {
+    border: none;
+  }
+
+  .slick-dots li.slick-active button:before {
+    width: 80px;
+    height: 15px;
+  }
+
+  /* design */
+  #design {
+    width: 100%;
+  }
+
+  #design .title {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .design-tabs {
+    margin-top: 25em;
+  }
+
+  .design-tabs ul li {
+    height: 150px;
+  }
+
+  .design-tabs h3 {
+    font-size: 12px;
+    line-height: 30px;
+  }
+
+  .info h4 {
+    font-size: 15px;
+  }
+
+  .info p {
+    font-size: 50%;
+  }
+
+  /* contact */
+  #contact {
+    width: 100%;
+    height: 250px;
+  }
+
+  #contact .container {
+    width: 100%;
+  }
+
+  .contact_kakao img {
+    display: none;
+  }
+
+  .contact_email b {
+    font-size: 30px;
+  }
+
+  .contact_inner p {
+    font-size: 5px;
+  }
+
+  .contact_copy h4 {
+    font-size: 5px;
+  }
+
+  .email_popup {
+    width: 50%;
+    line-height: 7rem;
+  }
+
+  .contact_email {
+    margin-top: -1em;
+  }
+
+  .featherlight .featherlight-content {
+    width: 90%;
+    height: 90%;
+  }
+
+  .featherlight iframe {
+    width: 100%;
+    height: 100%;
+  }
+}

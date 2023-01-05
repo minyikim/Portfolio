@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:title" content="김민이 | 웹 퍼블리셔 포트폴리오">
+  <meta property="og:description" content="MIN YI KIM PORTFOLIO | Web Publisher Portfolio">
+  <meta property="og:url" content="//www.minik.kr/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./images/thumbnail.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="./images/mini-favicon.ico" type="image/x-icon">
+  <title>김민이 포트폴리오 | MIN YI KIM PORTFOLIO</title>
+
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/featherlight.css">
+
+  <!-- ===== SLICK CSS ===== -->
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/slick-theme.css">
+
+  <!-- ===== AOS CSS ===== -->
+  <link rel="stylesheet" href="./css/aos.css">
+
+  <!-- ===== SCRIPT ===== -->
+  <script src="./script/jquery-3.5.1.min.js"></script>
+  <script src="./script/scroll.js"></script>
+  <script src="./script/script.js"></script>
+  <script src="./script/featherlight.js"></script>
+
+  <!-- ===== SLICK JS ===== -->
+  <script src="./script/jquery-1.11.0.min.js"></script>
+  <script src="./script/jquery-migrate-1.2.1.min.js"></script>
+  <script src="./script/slick.js"></script>
+  <script src="./script/slick.min.js"></script>
+
+  <!-- ===== AOS JS ===== -->
+  <script src="./script/aos.js"></script>
+</head>
+
+<body>
+  <div class="wrqp">
+    <header>
+      <a href="#" class="logo"><img src="./images/logo.png" alt="LOGO"></a>
+    </header>
+
+    <nav id="scroll_menu">
+      <ul>
+        <li class="active" data-num="0"><a href="#intro"></a><span>INTRO</span></li>
+        <li data-num="1"><a href="#about"></a><span>ABOUT</span></li>
+        <li data-num="2"><a href="#skill"></a><span>SKILL</span></li>
+        <li data-num="3"><a href="#portfolio"></a><span>PORTFOLIO</span></li>
+        <li data-num="4"><a href="#design"></a><span>DESIGN</span></li>
+        <li data-num="5"><a href="#contact"></a><span>CONTACT</span></li>
+      </ul>
+    </nav>
+
+    <main id="contents">
+      <!-- intro -->
+      <section id="intro" data-num="0">
+        <h4 class="scroll_text">SCROLL DOWN</h4>
+        <div class="scroll_down"></div>
+
+        <div class="container">
+          <div class="intro_ment">
+            <ul data-aos="flip-up" data-aos-duration="1500">
+              <li><em>안녕하세요!</em></li>
+              <li><span>생기가 넘치는</span> <b>언변 능숙형</b></li>
+              <li>김민이 입니다</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section id="about" data-num="1">
+        <h1 class="title">ABOUT ME</h1>
+        <div class="about_img" data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-duration="2000"></div>
+        <div class="about_ment" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2500">
+          <h2>신입 웹 퍼블리셔 김민이 입니다.</h2>
+          <p><b>저에게의 업이란?</b> 단순히 생계를 유지하기 위한 일이 아닌 <br> 저 자신을 <span>발전</span>시키고 <span>가치</span>있는 삶을 살아가기 위한
+            <span>목표</span>라고 생각합니다.</p>
+          <p>이를 위해 언제나 <b>능동적인 자세로 끊임없이 변화되는 웹 기술에 대응</b>하는<br> 웹 퍼블리셔 <b>김민이</b>가 되겠습니다.</p>
+          <a href="./portfolio/resume.pdf" download="김민이_resume" class="resume">DOWNLOAD RESUME</a>
+        </div>
+      </section>
+
+      <!-- skill -->
+      <section id="skill" data-num="2">
+        <div class="container">
+          <h1 class="title">SKILL</h1>
+
+          <div class="skill_inner" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
+            <div class="skill_1">
+              <h3>HTML5</h3>
+              <img src="./images/skill_html.png" alt="skill_html">
+              <div class="tooltip">
+                <p>웹 표준·웹 접근성을 준수하며, HTML<br> 마크업 방식과 시맨틱 태그를 사용하여<br> 전체적인 레이아웃을 작성 가능합니다.</p>
+              </div>
+            </div>
+
+            <div class="skill_2">
+              <h3>CSS3</h3>
+              <img src="./images/skill_css.png" alt="skill_css">
+              <div class="tooltip">
+                <p>IE 지원 까지 고려하여 Cross Browsving을 위하여 기존의 ‘float’와 최신의 ‘flex’, ‘Grid’ 기법을 활용 또한, 미디어쿼리를 이용하여 반응형
+                  웹 구현 가능합니다.</p>
+              </div>
+            </div>
+
+            <div class="skill_3">
+              <h3>Js & jQurey</h3>
+              <img src="./images/skill_js.png" alt="skill_js">
+              <div class="tooltip">
+                <p>필수적인 자바스크립트 활용이 가능하며 내비게이션, 탭 메뉴, 모달창 등을 순수 jQurey 코딩으로만 제작 가능합니다.</p>
+              </div>
+            </div>
+
+            <div class="skill_4">
+              <h3>Illustrator</h3>
+              <img src="./images/skill_ai.png" alt="skill_ai">
+              <div class="tooltip">
+                <p>로고디자인 및 그래픽 디자인, 아이콘 디자인,<br> 명함 디자인, 와이어프레임 시안 등의<br> 기본 일러스트 구현 가능합니다.</p>
+              </div>
+            </div>
+
+            <div class="skill_5">
+              <h3>Photoshop</h3>
+              <img src="./images/skill_photoshop.png" alt="skill_photoshop">
+              <div class="tooltip">
+                <p>이미지 편집 및 합성, 보정 등 구현<br> 웹 퍼블리셔 직군 특성에 맞게<br> 기본 툴 사용 가능합니다.</p>
+              </div>
+            </div>
+
+            <div class="skill_6">
+              <h3>Lightroom</h3>
+              <img src="./images/skill_lightroom.png" alt="skill_lightroom">
+              <div class="tooltip">
+                <p>풍경 이나 사물 이미지 편집 및 보정,<br> 관리 등의 편집 가능합니다.</p>
+              </div>
+            </div>
+
+            <div class="skill_7">
+              <h3>C Programming</h3>
+              <img src="./images/skill_c.png" alt="skill_c">
+              <div class="tooltip">
+                <p>C 프로그래밍 언어의 기본문법에 숙지하고 있습니다. 이외 중등학교 (정보컴퓨터) 2급 정교사를 소지하며, 프로그래밍에 대한 교육기획 및 공학을 가능합니다.</p>
+              </div>
+            </div>
+
+            <div class="skill_8">
+              <h3>VSCODE</h3>
+              <img src="./images/skill_vscode.png" alt="skill_vscode">
+              <div class="tooltip">
+                <p>주로 Visual Studio Code을 사용하며 이외에도 Notepad++, Visual Studio도 사용 가능합니다.</p>
+              </div>
+            </div>
+
+            <div class="skill_9">
+              <h3>GitHub</h3>
+              <img src="./images/skill_github.png" alt="skill_github">
+              <div class="tooltip">
+                <p> 퍼블리싱 한 내용을 공개하며,<br> Git 호스팅 프로그램에 활용 가능합니다.</p>
+              </div>
+            </div>
+          </div> <!-- skill_inner -->
+        </div>
+      </section>
+
+      <!-- portfolio -->
+      <section id="portfolio" data-num="3">
+        <div class="container2">
+          <h1 class="title">PORTFOLIO</h1>
+
+          <div class="slide">
+            <div class="port_inner port1">
+              <div class="port_left" data-aos="fade-right">
+                <div class="port_tit">
+                  <span>RENEWAL HOMEPAGR</span>
+                  <h1 class="port_t1">캐논코리아 주식회사</h1>
+                  <h2>CANON KOREA</h2>
+                </div>
+                <ul class="port_text">
+                  <li>
+                    <h5>프로젝트 개요</h5>
+                    <p>기존 웹 사이트 문제점을 파악한 후, 수정 사항을 정리하여 리디자인 및 퍼블리싱</p>
+                  </li>
+                  <li>
+                    <h5>참여도</h5>
+                    <p>디자인 100% + 퍼블리싱 100%</p>
+                  </li>
+                  <li>
+                    <h5>제작방식</h5>
+                    <p>Design&nbsp;<em>Photoshop, Illustrator</em></p>
+                    <p>Publishing&nbsp;<em>HTML, CSS, JavaScript, jQurey</em></p>
+                  </li>
+                </ul>
+                <div class="port_view">
+                  <div class="guide"><a href="./portfolio/website/guide1.jpg" data-featherlight="iframe">VIEW GUIDE</a>
+                  </div>
+                  <div class="site"><a href="./portfolio/website/01_CANON/index.html" target="_blank">VIEW SITE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="port_right1"></div>
+            </div>
+
+            <div class="port_inner port2">
+              <div class="port_left">
+                <div class="port_tit">
+                  <span>RENEWAL HOMEPAGR</span>
+                  <h1 class="tit1">한국에너지공단</h1>
+                  <h2>Korea Energy Agency</h2>
+                </div>
+                <ul class="port_text">
+                  <li>
+                    <h5>프로젝트 개요</h5>
+                    <p>기존 웹 사이트 문제점을 파악한 후, 수정 사항을 정리하여 리디자인 및 퍼블리싱</p>
+                  </li>
+                  <li>
+                    <h5>참여도</h5>
+                    <p>디자인 100% + 퍼블리싱 100%</p>
+                  </li>
+                  <li>
+                    <h5>제작방식</h5>
+                    <p>Design&nbsp;<em>Photoshop, Illustrator</em></p>
+                    <p>Publishing&nbsp;<em>HTML, CSS, JavaScript, jQurey</em></p>
+                  </li>
+                </ul>
+                <div class="port_view">
+                  <div class="guide"><a href="./portfolio/website/guide2.jpg" data-featherlight="iframe">VIEW GUIDE</a>
+                  </div>
+                  <div class="site"><a href="./portfolio/website/02_KEA/index.html">VIEW SITE</a></div>
+                </div>
+              </div>
+              <div class="port_right2"></div>
+            </div>
+
+            <div class="port_inner port3">
+              <div class="port_left">
+                <div class="port_tit">
+                  <span>RENEWAL HOMEPAGR</span>
+                  <h1 class="tit2">닌텐도 스위치<br><b>짱구는 못말려! 나와 박사의 여름방학</b></h1>
+                  <h2>Nintendo Switch</h2>
+                </div>
+                <ul class="port_text">
+                  <li>
+                    <h5>프로젝트 개요</h5>
+                    <p>기존 웹 사이트 문제점을 파악한 후, 수정 사항을 정리하여 리디자인 및 퍼블리싱</p>
+                  </li>
+                  <li>
+                    <h5>참여도</h5>
+                    <p>디자인 100% + 퍼블리싱 100%</p>
+                  </li>
+                  <li>
+                    <h5>제작방식</h5>
+                    <p>Design&nbsp;<em>Photoshop, Illustrator</em></p>
+                    <p>Publishing&nbsp;<em>HTML, CSS, JavaScript, jQurey</em></p>
+                  </li>
+                </ul>
+                <div class="port_view">
+                  <div class="guide"><a href="./portfolio/website/guide3.jpg" data-featherlight="iframe">VIEW GUIDE</a>
+                  </div>
+                  <div class="site"><a href="./portfolio/website/03_Nintendo/index.html" target="_blank">VIEW SITE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="port_right3"></div>
+            </div>
+          </div>
+        </div> <!-- container2 -->
+      </section>
+
+      <!-- design -->
+      <section id="design" data-num="4">
+        <div class="container2">
+          <h1 class="title">DESIGN</h1>
+
+          <div class="design-tabs" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
+            <h3 class="tab1 on">Web Design</h3>
+            <ul class="tab-inner1 on">
+              <li><a href="./portfolio/webdesign/01/index.html" data-featherlight="iframe">
+                  <img src="./images/w1.jpg" alt="webdesign1">
+                  <div class="info">
+                    <h4>미스터 션샤인 등장인물</h4>
+                    <p>[참여도]<br> 퍼블리싱 100%</p>
+                  </div>
+                </a></li>
+              <li><a href="./portfolio/webdesign/02/index.html" data-featherlight="iframe">
+                  <img src="./images/w2.jpg" alt="webdesign2">
+                  <div class="info">
+                    <h4>짱구는 못말려 등장인물</h4>
+                    <p>[참여도]<br> 퍼블리싱 100%</p>
+                  </div>
+                </a></li>
+              <li><a href="./portfolio/webdesign/03/index.html" data-featherlight="iframe">
+                  <img src="./images/w3.jpg" alt="webdesign3">
+                  <div class="info">
+                    <h4>홈페이지 디자인</h4>
+                    <p>[참여도]<br> 퍼블리싱 100%</p>
+                  </div>
+                </a></li>
+              <li><a href="./portfolio/webdesign/04/index.html" data-featherlight="iframe">
+                  <img src="./images/w4.jpg" alt="webdesign4">
+                  <div class="info">
+                    <h4>MINI PHOTO</h4>
+                    <p>[참여도]<br> 퍼블리싱 100%</p>
+                  </div>
+                </a></li>
+              <li><a href="./portfolio/webdesign/05/index.html" data-featherlight="iframe">
+                  <img src="./images/w5.jpg" alt="webdesign5">
+                  <div class="info">
+                    <h4>산업대학교</h4>
+                    <p>[참여도]<br>디자인 100%<br>퍼블리싱 100%</p>
+                  </div>
+                </a></li>
+              <li><a href="./portfolio/webdesign/06/index.html" data-featherlight="iframe">
+                  <img src="./images/w6.jpg" alt="webdesign6">
+                  <div class="info">
+                    <h4>JUST 쇼핑몰</h4>
+                    <p>[참여도]<br>디자인 100%<br>퍼블리싱 100%</p>
+                  </div>
+                </a></li>
+              <li><a href="./portfolio/webdesign/07/index.html" data-featherlight="iframe">
+                  <img src="./images/w7.jpg" alt="webdesign7">
+                  <div class="info">
+                    <h4>Green 복지재단</h4>
+                    <p>[참여도]<br>디자인 100%<br>퍼블리싱 100%</p>
+                  </div>
+                </a></li>
+              <li><a href="./portfolio/webdesign/08/index.html" data-featherlight="iframe">
+                  <img src="./images/w8.jpg" alt="webdesign8">
+                  <div class="info">
+                    <h4>강원천문대</h4>
+                    <p>[참여도]<br>디자인 100%<br>퍼블리싱 100%</p>
+                  </div>
+                </a></li>
+            </ul>
+
+            <h3 class="tab2">Illustrator</h3>
+            <ul class="tab-inner2">
+              <li><a href="./portfolio/illustrator/01/i1.jpg" data-featherlight="iframe">
+                  <img src="./images/i1.jpg" alt="Illustrator1">
+                  <div class="info">
+                    <h4>Grand Open 배너</h4>
+                    <p>[참여도]<br> 일러스트 100%</p>
+                  </div>
+                </a></li>
+              <li><a href="./portfolio/illustrator/02/i2.jpg" data-featherlight="iframe">
+                  <img src="./images/i2.jpg" alt="Illustrator2">
+                  <div class="info">
+                    <h4>신나는 쇼핑여행 배너</h4>
+                    <p>[참여도]<br> 일러스트 100%</p>
+                  </div>
+                </a></li>
+              <li><a href="./portfolio/illustrator/03/i3.jpg" data-featherlight="iframe">
+                  <img src="./images/i3.jpg" alt="Illustrator3">
+                  <div class="info">
+                    <h4>룰렛을 돌리자! 배너</h4>
+                    <p>[참여도]<br> 일러스트 100%</p>
+                  </div>
+                </a></li>
+              <li><a href="./portfolio/illustrator/04/i4.jpg" data-featherlight="iframe">
+                  <img src="./images/i4.jpg" alt="Illustrator4">
+                  <div class="info">
+                    <h4>주말 쇼핑, 무료 배송 배너</h4>
+                    <p>[참여도]<br> 일러스트 100%</p>
+                  </div>
+                </a></li>
+              <li><a href="./portfolio/illustrator/05/index.html" data-featherlight="iframe">
+                  <img src="./images/i5.jpg" alt="Illustrator5">
+                  <div class="info">
+                    <h4>광고 디자인</h4>
+                    <p>[참여도]<br> 일러스트 100%</p>
+                  </div>
+                </a></li>
+              <li><a href="./portfolio/illustrator/06/index.html" data-featherlight="iframe">
+                  <img src="./images/i6.jpg" alt="Illustrator6">
+                  <div class="info">
+                    <h4>패키지 & 비지니스 디자인</h4>
+                    <p>[참여도]<br> 일러스트 100%</p>
+                  </div>
+                </a></li>
+              <li><a href="/portfolio/illustrator/07/index.html" data-featherlight="iframe">
+                  <img src="./images/i7.jpg" alt="Illustrator7">
+                  <div class="info">
+                    <h4>BI & CI 디자인</h4>
+                    <p>[참여도]<br> 일러스트 100%</p>
+                  </div>
+                </a></li>
+              <!-- <li><a href="./images/design/i8.png" target="_blank">
+                  <img src="./images/i8.jpg" alt="Illustrator8">
+                  <div class="info">
+                    <h4></h4>
+                    <p>[참여도]<br></p>
+                  </div>
+                </a></li> -->
+            </ul>
+
+            <h3 class="tab3">Photoshop</h3>
+            <ul class="tab-inner3">
+              <li><a href="./portfolio/photoshop/01/p1.jpg" data-featherlight="iframe">
+                  <img src="./images/p1.jpg" alt="Photoshop1">
+                  <div class="info">
+                    <h4>꽃피는 봄세일 배너</h4>
+                    <p>[참여도]<br> 포토샵 100%</p>
+                  </div>
+                </a></li>
+              <li><a href="/portfolio/photoshop/02/p2.jpg" data-featherlight="iframe">
+                  <img src="./images/p2.jpg" alt="Photoshop2">
+                  <div class="info">
+                    <h4>콜롬버스 배너</h4>
+                    <p>[참여도]<br> 포토샵 100%</p>
+                  </div>
+                </a></li>
+              <li><a href="./portfolio/photoshop/03/index.html" data-featherlight="iframe">
+                  <img src="./images/p3.jpg" alt="Photoshop3">
+                  <div class="info">
+                    <h4>떠나자! 가을여행<br>카드뉴스</h4>
+                    <p>[참여도]<br> 포토샵 100%</p>
+                  </div>
+                </a></li>
+              <li><a href="./portfolio/photoshop/04/index.html" data-featherlight="iframe">
+                  <img src="./images/p4.jpg" alt="Photoshop4">
+                  <div class="info">
+                    <h4>고급 Tool 도구 디자인</h4>
+                    <p>[참여도]<br> 포토샵 100%</p>
+                  </div>
+                </a></li>
+              <li><a href="./portfolio/photoshop/05/index.html" data-featherlight="iframe">
+                  <img src="./images/p5.jpg" alt="Photoshop5">
+                  <div class="info">
+                    <h4>사진편집 응용 디자인</h4>
+                    <p>[참여도]<br> 포토샵 100%</p>
+                  </div>
+                </a></li>
+              <li><a href="./portfolio/photoshop/06/index.html" data-featherlight="iframe">
+                  <img src="./images/p6.jpg" alt="Photoshop6">
+                  <div class="info">
+                    <h4>포스터 디자인</h4>
+                    <p>[참여도]<br> 포토샵 100%</p>
+                  </div>
+                </a></li>
+              <li><a href="./portfolio/photoshop/07/index.html" data-featherlight="iframe">
+                  <img src="./images/p7.jpg" alt="Photoshop7">
+                  <div class="info">
+                    <h4>웹 페이지 디자인</h4>
+                    <p>[참여도]<br> 포토샵 100%</p>
+                  </div>
+                </a></li>
+              <!-- <li><a href="./images/design/p8.jpg" target="_blank">
+                  <img src="./images/p8.jpg" alt="Photoshop8">
+                  <div class="info">
+                    <h4></h4>
+                    <p>[참여도]<br></p>
+                  </div>
+                </a></li> -->
+            </ul>
+          </div> <!-- design-tabs -->
+        </div> <!-- container -->
+      </section>
+
+      <!-- contact -->
+      <section id="contact" data-num="5">
+        <div class="container">
+          <!-- <h1 class="title"></h1> -->
+          <div class="contact_inner">
+            <div class="contact_kakao" data-aos="zoom-out">
+              <a href="https://namecard.kakao.com/alsdl7748" target="_blank"><img src="./images/kakao.jpg"
+                  alt="contact_kakao"></a>
+            </div>
+
+            <button class="contact_email" onclick="copy('#emailadress')">
+              <span class="email_popup">복사 되었습니다!</span>
+              <b id="emailadress" data-aos="zoom-out">alsdl7748@naver.com</b>
+            </button>
+            <p>자세한 문의는 연락주시면 빠른 시일 내로 답장해 드립니다.<br>메일을 누르시면 복사 가능합니다.</p>
+
+            <div class="contact_copy">
+              <h4>COPYRIGHT ⓒ 2023 WEBPUBLISHER MIN YI KIM. ALL RIGHTS RESERVED.</h4>
+              <h4>본 사이트는 김민이 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다.</h4>
+              <h4>사용된 포트는 별도의 출처가 있음을 밝혀 드립니다.</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      AOS.init();
+    </script>
+  </div> <!-- wrqp end -->
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* ------- reset ------- */
+html, body, div, h1, h2, h3, p, a, img, ul, li, span, em, header, content, footer, button{
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ------- body ------- */
+body{
+  height: 2200px;
+  background-color: rgb(240, 240, 240);
+  font-family: 'Fira Sans', sans-serif;
+}
+
+/* ------- inner ------- */
+.header, .inner {
+  width: 1000px;
+  margin: 0 auto;
+}
+.inner {
+  text-align: center;
+}
+
+/* ------- nav ------- */
+.header{
+  height: 90px;
+}
+.header_logo{
+  float: left;
+  font-size: 18px;
+  line-height: 90px;
+}
+.header_logo:hover{
+  color: navy;
+}
+.header_nav{
+  float: right;
+  font-size: 20px;
+  line-height: 90px;
+  text-align: center;
+}
+.header_nav a{
+  margin: 10px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.header_nav a:hover{
+  border-bottom: 8px solid navy;
+  color: navy;
+  font-weight: bold;
+}
+
+/* ------- logo title ------- */
+.visual{
+  width: 1980px;
+  height: 940px;
+  margin: 0 auto;
+  background-image: url(../img/main_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.logo{
+  width: 200px;
+  height: 200px;
+}
+.text_box h1{
+  font-size: 90px;
+  color: white;
+}
+.text_box{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  line-height:  100px;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.button01{
+  padding: 20px 60px;
+  background-color: navy;
+  color: white;
+  font-size: 30px;
+  border-radius: 10px;
+  border: 5px solid white;
+  transition: 0.3s;
+}
+.button01:hover{
+  background-color: white;
+  border: 5px solid navy;
+  color: navy
+}
+
+h3{
+  font-size: 22px;
+  padding: 10px;
+}
+
+p {
+  font: 15px;
+  padding: 10px;
+}
+
+/* ------- content01 ------- */
+.content01{
+  height: 390px;
+  display: inline-block;
+}
+.content01 h2{
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.content01 p{
+  font-size: 13px;
+}
+
+.fa-bar-chart,
+.fa-cogs,
+.fa-rocket{
+  width: 80px;
+  height: 80px;
+  font-size: 45px;
+  line-height: 80px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgba(0, 0, 128, .7);
+  animation-name: font;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+}
+@keyframes font{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(365deg);
+  }
+}
+
+.content01_box1,
+.content01_box2,
+.content01_box3
+{
+  width: 300px;
+  height: 390px;
+  padding-top: 60px;
+  margin: 10px;
+  float: left;
+  text-align: center;
+  line-height: 20px;
+  box-sizing: border-box;
+}
+.more{
+  padding: 5px 20px;
+  color: rgb(184, 184, 184);
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid rgb(184, 184, 184);
+  transition: 0.5s;
+}
+.more:hover{
+  color: rgb(0, 0, 92);
+  border: 1px solid navy;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* ------- content02 ------- */
+.content02{
+  width: 1000px;
+  height: 330px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 128, .1);
+}
+.content02_box1 img{
+  height: 340px;
+  float: left;
+}
+.content02_box2 {
+  width: 400px;
+  height: 320px;
+  padding: 40px;
+  float: left;
+}
+
+/* ------- content03 ------- */
+.content03{
+  width: 1000px;
+  height: 330px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 128, .1);
+}
+
+.content03_box1 img{
+  width: 490px;
+  height: 330px;
+  float: right;
+}
+
+.content03_box2 {
+  width: 390px;
+  height: 320px;
+  padding: 60px;
+  float: left;
+}
+
+/* ------- button ------- */
+.button02,
+.button03{
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: 2px solid navy;
+  color: navy;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.button02:hover{
+  background-color: rgba(0, 0, 128, .8);
+  color: white
+}
+.button03:hover{
+  background-color: rgba(0, 0, 128, .8);
+  color: white
+}
+
+/* ------- footer ------- */
+.footer{
+  clear: both;
+  padding: 20px;
+  background-color: rgba(0, 0, 128, .7);
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}

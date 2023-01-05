@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ========== reset ========== */
+*{
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  box-sizing: border-box;
+  font-family: 'S-CoreDream-3Light';
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.clearfix::after{
+  display: table;
+  content: "";
+  clear: both;
+}
+img{
+  vertical-align: top;
+  border: 0;
+}
+body{
+  color: #222328;
+}
+
+/* ===== wrap ===== */
+.wrap{
+  width: 1980px;
+  margin: 50px auto;
+}
+
+.container{
+  width: 100%;
+}
+
+.title{
+  font-size: 100px;
+  text-align: center;
+}
+
+.design_img{
+  text-align: center;
+}
+
+.container img{
+  width: 30%;
+  margin: 1.5em;
+  border: 1px solid rgba(0, 0, 0 , .1);
+
+  transition: .25s ease;
+}
+
+.container img:hover{
+  box-shadow: 1px 1px 10px black;
+  transform: scale(1.05);
+}
+
+@media ( max-width: 768px ) {
+  .wrap{
+    width: 90%;
+  }
+  .title{
+    font-size: 40px;
+  }
+  .design_img{
+    text-align: center;
+  }
+  .container img{
+    width: 45%;
+    margin: 0.5em;
+  }
+
+}
+@media ( max-width: 1024px ) {
+  .wrap{
+    width: 90%;
+  }
+  .title{
+    font-size: 40px;
+  }
+  .design_img{
+    text-align: center;
+  }
+  .container img{
+    width: 45%;
+    margin: 0.5em;
+  }
+}
